@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<title>AADB</title>
+	<title>Membership</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -31,6 +31,13 @@
   		h2 {
   			margin-top: 20px;
   			text-align: center;
+  		}
+  		form.widthform {
+  			width: 80%;
+  			margin: 0 auto;
+  			padding: 2%;
+  			border: 10px solid black;
+  		}
   		}
   	</style>
 </head>
@@ -108,6 +115,47 @@
 				</ul>
 			</div>
 		</div>
+
+		<h2>Join or Renew Today</h2>
+		<form class="widthform">
+			<h3>Your Information</h3>
+			<fieldset>
+				<strong>Name</strong>
+				<div class="input-group mb-3">
+					<input type="text" class="form-control" name="first_name" placeholder="First Name">
+					<input type="text" class="form-control" name="last_name" placeholder="Last Name">
+				</div>
+
+				<strong>Address</strong>
+				<input type="text" class="form-control" name="address_line1" placeholder="Address Line 1">
+				<input type="text" class="form-control" name="address_line2" placeholder="Address Line 2">
+				<div class="input-group">
+					<input type="text" class="form-control" name="city" placeholder="City/Town">
+					<input type="text" class="form-control" name="state" placeholder="State/Province">
+					<input type="text" class="form-control" name="zip" placeholder="Zip/Postal Code">
+				</div>
+				<input type="text" class="form-control" name="country" placeholder="Country/Region">
+				
+				<strong>Contact</strong>
+				<input type="email" class="form-control" name="email" placeholder="Email Address">
+				<input type="text" class="form-control" name="phone" placeholder="Phone">
+				<input type="text" class="form-control" name="mobile" placeholder="Mobile">		
+			</fieldset>
+
+			<h3>Membership Type</h3>
+			<div class="custom-control custom-radio">
+				<input type="checkbox" class="custom-control-input" id="active" name="activeMember">
+				<label for="active" class="custom-control-label">
+					<strong>Active Member</strong><br>
+					<ul>
+						<li>Active memberships are offered to individuals who are DeafBlind or with vision/hearing loss and living in the United States. In addition to receiving membership benefits, each member of this class has voting privileges to all AADB's general elections and business meetings. After fulfilling the bylaws requirements, active members can run for any position on the Board of Directors.</li>
+					</ul>
+				</label>
+			</div>
+
+				
+		</form>	
+
 	</main>
 
 </body>
